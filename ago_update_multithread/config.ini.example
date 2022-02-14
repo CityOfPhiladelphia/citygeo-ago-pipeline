@@ -1,0 +1,50 @@
+############################
+# Database credentials
+
+[databridge_creds]
+user = sde
+password = some_password
+host = some-hostname.com
+port = 1521
+database = oracle_SID
+
+############################
+# Org portals we can log into
+
+[ago]
+portal = https://phl.maps.arcgis.com
+user = maps.phl.data
+password = some_password
+proxy = proxy.phila.gov
+
+[maps_dev]
+portal = https://phl.maps.arcgis.com
+user = maps.phl.dev
+password = some_password
+proxy = proxy.phila.gov
+
+############################
+# Permissions and groups to publish datasets as
+
+[public_perms]
+sde = C:\\path\\to_sde_connections\\somefile.sde
+shrOrg = True
+shrEveryone = True
+shrGroups = PHLmaps (Open Data)
+
+[private_perms]
+sde = C:\\path\\to_sde_connections\\somefile.sde
+shrOrg = False
+shrEveryone = False
+
+[enterprise_perms]
+sde = C:\\path\\to_sde_connections\\somefile.sde
+shrOrg = True
+shrEveryone = False
+shrGroups = PHLmaps (Enterprise Only)
+
+
+[logging]
+max_bytes = 2500000
+file_count = 3
+log_level = INFO

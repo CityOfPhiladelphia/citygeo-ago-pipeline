@@ -1,0 +1,1 @@
+C:\Python37\python.exe E:\Scripts\ago_update_multithread\email_summary.py
